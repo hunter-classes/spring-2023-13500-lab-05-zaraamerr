@@ -17,3 +17,16 @@ bool isDivisibleBy (int n, int d){
                         // using % operator.
 }
 
+bool isPrime(int n){
+    if (n == 0 || n == 1){ //0 and 1 are not prime nums
+        return false;
+    }
+
+    for (int i = 2; i < n; i++){ //a prime num cannot be evenly divisible by any int less than itself
+        if (n % i == 0){ //if it is
+            return false; //then it is not prime
+        }
+    }
+    return true;
+}
+

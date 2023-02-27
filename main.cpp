@@ -11,4 +11,10 @@ int main()
   bool resultb;
   resultb = isDivisibleBy (10,3);
   std::cout << resultb << std::endl;
+  bool resultc;
+  resultc= isPrime(2);
+  std::cout << resultc << std::endl;
+  bool resultd;
+  resultd= isPrime(9);
+  std::cout << resultd << std::endl;
 }

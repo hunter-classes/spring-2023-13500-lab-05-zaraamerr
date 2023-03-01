@@ -32,6 +32,7 @@ bool isPrime(int n){
 }
 
 //Task C: Function: the next smallest prime num greater than n
+
 int isNextPrime(int n){
     int next = n + 1; //initialize next as n+1
     while (!isPrime(next)) { //while isPrime is false
@@ -55,4 +56,14 @@ int countPrimes(int a, int b) {
     }
 
     return count; //return num of values in interval that are prime
+}
+
+//Task E: Function: if n is a twin prime
+
+bool isTwinPrime(int n){
+    if (isPrime(n) && (isPrime(n-2) || isPrime(n+2))) { //if n is prime and
+                                                // either n-2 or n+2 is prime
+        return true; //true
+    }
+    return false; //false
 }

@@ -15,13 +15,21 @@ TEST_CASE ("Is Prime Cases") {
 }
 
 TEST_CASE("Is Next Prime Cases"){
-  CHECK((isNextPrime(14) == 17) == 1); //test if the smallest prime num
+  CHECK(isNextPrime(14) == 17); //test if the smallest prime num
                                     // after 14 is 17 == TRUE (should be true)
-  CHECK((isNextPrime(17) == 19) == 1); //test if the smallest prime num
+  CHECK(isNextPrime(17) == 19); //test if the smallest prime num
                                     // after 17 is 19 == TRUE (should be true)
 }
 
 TEST_CASE("Count Primes Cases"){
-  CHECK((countPrimes(10,20)==4) == 1); //test if that there are 4 expected 
+  CHECK(countPrimes(10,20)==4); //test if that there are 4 expected 
                                       //prime values (should be true)
+  CHECK(countPrimes(20,30)==2); //test if that there are 2 expected 
+                                      //prime values (should be true)
+}
+
+TEST_CASE("Twin Primes Cases"){
+  CHECK(isTwinPrime(17)==1); //test if 17 (a prime num) has a twin prime (true)
+  CHECK(isTwinPrime(4)==0); //test if 4 (not a prime num) is a twin prime (false)
+  CHECK(isTwinPrime(79)==0); //test if 79 (a prime num) has a twin prime (false)
 }

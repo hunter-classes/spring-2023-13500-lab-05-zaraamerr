@@ -30,5 +30,19 @@ int main()
   int resultg;
   resultg= countPrimes(10,20); //4 values
   std::cout << resultg << std::endl;
+  int resulth;
+  resulth= countPrimes(20,30); //2 values
+  std::cout << resulth << std::endl;
+  //task e: testing for twin primes
+  int resulti;
+  resulti= isTwinPrime(17); //true
+  std::cout << resulti << std::endl;
+  int resultj;
+  resultj= isTwinPrime(4); //false
+  std::cout << resultj << std::endl;
+  int resultk;
+  resultk= isTwinPrime(79); //false
+  std::cout << resultk << std::endl;
+
 
 }

@@ -43,6 +43,14 @@ int main()
   int resultk;
   resultk= isTwinPrime(79); //false
   std::cout << resultk << std::endl;
+  //task f: testing for the next smallest twin prime
+  int resultl;
+  resultl= nextTwinPrime(7); //11
+  std::cout << resultl << std::endl;
+  int resultm;
+  resultm= nextTwinPrime(11); //13
+  std::cout << resultm << std::endl;
+
 
 
 }

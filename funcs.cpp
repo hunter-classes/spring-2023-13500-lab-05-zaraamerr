@@ -67,3 +67,13 @@ bool isTwinPrime(int n){
     }
     return false; //false
 }
+
+//Task F: Function: next smallest twin prime greater than n
+
+int nextTwinPrime(int n) {
+    int nextPrime = isNextPrime(n); // find the next prime number greater than n
+    while (!isTwinPrime(nextPrime)) { //while next prime is not a twin prime
+        nextPrime = isNextPrime(nextPrime); //get next prime number
+    }
+    return nextPrime; //return the next twin prime
+}

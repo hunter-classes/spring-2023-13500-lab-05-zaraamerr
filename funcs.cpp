@@ -77,3 +77,16 @@ int nextTwinPrime(int n) {
     }
     return nextPrime; //return the next twin prime
 }
+
+//Task G: Function: largest twin prime within an interval range
+
+int largestTwinPrime(int a, int b){
+    int largest = -1; // initialize the largest twin prime as -1
+    for (int i = b; i >= a; i--) { // start from b and iterate backwards to a
+        if (isTwinPrime(i)) { // if i is a twin prime
+            largest = i; // update the largest twin prime
+            break; // break the loop since we found the largest twin prime
+        }
+    }
+    return largest; // return the largest twin prime
+}

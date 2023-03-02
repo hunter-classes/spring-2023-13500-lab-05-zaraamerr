@@ -38,3 +38,9 @@ TEST_CASE("Next Twin Prime Cases"){
   CHECK(nextTwinPrime(7)==11); //check if 7's twin prime is 11
   CHECK(nextTwinPrime(11)==13); //check if 11's twin prime is 13
 }
+
+TEST_CASE("Largest Twin Prime Cases"){
+  CHECK(largestTwinPrime(5,18)==17); //checks if largest twin prime btwn 5 and 18 == 17
+  CHECK(largestTwinPrime(1,31)==31); //checks if largest twin prime btwn 1 and 31 == 31
+  CHECK(largestTwinPrime(14,16)==-1); //checks if there is no largest twin prime btwn 14 and 16
+}

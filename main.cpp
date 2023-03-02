@@ -50,7 +50,14 @@ int main()
   int resultm;
   resultm= nextTwinPrime(11); //13
   std::cout << resultm << std::endl;
-
-
-
+  //task g: testing for the largest twin prime within a given range
+  int resultn;
+  resultn= largestTwinPrime(5,18); //17
+  std::cout << resultn << std::endl;
+  int resulto;
+  resulto= largestTwinPrime(11,31); //31
+  std::cout << resulto << std::endl;
+  int resultp;
+  resultp= largestTwinPrime(14,16); //-1 bc it doesnt exist
+  std::cout << resultp << std::endl;
 }
